@@ -1,7 +1,7 @@
 """Packaging setup script."""
 
 import glob
-from setuptools import setup
+from setuptools import setup, find_namespace_packages
 import versioneer
 import pathlib
 
@@ -16,7 +16,8 @@ setup(
     author="Spencer Pao",
     author_email="business.inquiry.spao@gmail.com",
     license="MIT",
-    packages=["ytad"],
+    package_dir={'': 'ytad'},
+    packages=find_namespace_packages(where='ytad'),
     entry_points={"console_scripts": ["ytauto=YouTube_Automation.cli:cli"]},
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
