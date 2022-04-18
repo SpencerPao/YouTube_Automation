@@ -3,7 +3,7 @@ comment descriptions."""
 import argparse
 from dotenv import load_dotenv
 import pandas as pd
-from ytad.config.app_config import Config
+from ytad.app_config import Config
 from ytad.download_my_uploads import DownloadUploadsData
 from ytad.authentication import Authenticate
 from ytad.authentication import Authenticate
