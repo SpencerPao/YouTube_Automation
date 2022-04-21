@@ -11,6 +11,8 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="ytad",
+    long_description=README,
+    long_description_content_type='text/markdown',
     description="A tool for adding YouTube video like/dislike counts to video descriptions.",
     url="https://github.com/SpencerPao/YouTube_Automation",
     author="Spencer Pao",
