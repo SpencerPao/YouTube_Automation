@@ -19,7 +19,8 @@ setup(
     license="MIT",
     package_dir={'': 'ytad'},
     packages=find_packages(where='ytad'),
-    entry_points={"console_scripts": ["ytauto=YouTube_Automation.cli:cli"]},
+    entry_points={"console_scripts": [
+        "update_notifications=ytad.update_notifications:update_video_descriptions"]},
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     python_requires=">=3.7",
