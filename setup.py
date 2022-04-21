@@ -1,6 +1,5 @@
 """Packaging setup script."""
 
-import glob
 from setuptools import setup, find_packages
 import versioneer
 import pathlib
