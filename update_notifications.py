@@ -6,7 +6,6 @@ import pandas as pd
 from ytad.app_config import Config
 from ytad.download_my_uploads import DownloadUploadsData
 from ytad.authentication import Authenticate
-from ytad.authentication import Authenticate
 from ytad.new_description import NewDescription
 from ytad.update_description import UpdateDescription
 import glob
