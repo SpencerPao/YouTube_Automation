@@ -118,10 +118,11 @@ def update(args: argparse.ArgumentParser) -> None:
 
 
 # if __name__ == "__main__":
-def update_video_descriptions():
+def main():
     """Pass in arguments to command line to execute update command.
     Example: python update_notifications.py --update_df=No --verify_each_update=yes"""
     parser = argparse.ArgumentParser(
+        prog="uvd",
         description="Inputs arguments to update YouTube Description with like to dislike ratio."
     )
     parser.add_argument(

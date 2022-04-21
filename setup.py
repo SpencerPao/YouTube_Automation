@@ -20,7 +20,7 @@ setup(
     package_dir={'': 'ytad'},
     packages=find_packages(where='ytad'),
     entry_points={"console_scripts": [
-        "update_notifications=ytad.update_notifications:update_video_descriptions"]},
+        "uvd=ytad.update_notifications:main"]},
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
     python_requires=">=3.7",
