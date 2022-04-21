@@ -11,16 +11,16 @@ pip install ytad
 # Setup Requirements
 - Need YouTube account with at least one public video
 - Register your account with [Google console developers](https://console.developers.google.com)
+- Need to enable API (YouTube Data API V3)
 - Create **.env** file in root directory
 ````
 # Contents of .env
 CLIENT_SECRET_FILE=client_secret_web_app.json
 CHANNEL_ID='YOUR_CHANNEL_ID'
 ````
-- Need to enable API (YouTube Data API V3)
 - **You have the choice to choose which OAuth to use; In production, I used Web App**
-  - Need to create OAuth Client ID: > Web App > Name Web App App > Create > Download OAuth Client (JSON)
-    - This will be your web app secret file. **(Renamed downloaded OAuth Client to client_secret_web_app.json)**
+  - Create OAuth Client ID: > Web App > Name Web App App > Create > Download OAuth Client (JSON)
+    - This will be your web app secret file. **(Rename downloaded OAuth Client to client_secret_web_app.json)**
 - Setup up OAuth Consent Screen
   - Make sure to add your testing email as a test user to access your YouTube account (need to manually do this)
 -   Ensure to verify your application! Run the following:
