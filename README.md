@@ -3,12 +3,14 @@ Using YouTube's API, this repository will work toward automating tedious tasks f
 
 # Requirements:
 - Python >= 3.7
+- [PyPi distribution](https://pypi.org/project/ytad/)
 ````
-pip install -r requirements.txt
+pip install ytad
 ````
 
 # Setup Requirements
-- Need YouTube account
+- Need YouTube account with at least one public video
+- Register your account with [Google console developers](https://console.developers.google.com)
 - Create **.env** file in root directory
 ````
 # Contents of .env
@@ -23,7 +25,7 @@ CHANNEL_ID='YOUR_CHANNEL_ID'
   - Make sure to add your testing email as a test user to access your YouTube account (need to manually do this)
 -   Ensure to verify your application! Run the following:
   ````
-  # creates a token.pickle file   
+  # creates a token.pickle file for authentication
   from ytad.authentication import Authenticate
   auth = Authenticate()
   youtube = auth.check_token_web_app_data_api()
@@ -46,14 +48,14 @@ I used AWS services to ensure a cron job (in production) is enacted. This is a l
 - <strike> Minimization of YouTube Requests </strike>
 - <strike> Keygen for API calls </strike>
 - <strike> argparse: CLI enabled. </strike>
-- setup.py (on pypi) for installation
+- <strike> setup.py (on pypi) for installation
 
 # Remaining TODOs:
-- [ ] Verify setup with @SpencerPao
+- [x] Verify setup with @SpencerPao
 - [ ] Overhaul CLI (maybe this should be another issue and version though)
-- [ ] Test API and authentication
-- [ ] Create PyPI and TestPyPI accounts
-- [ ] Build package wheel
-- [ ] Test package with `twine`
-- [ ] Upload package with `twine`
-- [ ] Try installing with `pip`
+- [x] Test API and authentication
+- [x] Create PyPI and TestPyPI accounts
+- [x] Build package wheel
+- [x] Test package with `twine`
+- [x] Upload package with `twine`
+- [x] Try installing with `pip`
