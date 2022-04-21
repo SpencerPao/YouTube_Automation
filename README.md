@@ -48,7 +48,7 @@ I used AWS services to ensure a cron job (in production) is enacted. This is a l
 - <strike> Minimization of YouTube Requests </strike>
 - <strike> Keygen for API calls </strike>
 - <strike> argparse: CLI enabled. </strike>
-- <strike> setup.py (on pypi) for installation
+- <strike> setup.py (on pypi) for installation </strike>
 
 # Remaining TODOs:
 - [x] Verify setup with @SpencerPao
