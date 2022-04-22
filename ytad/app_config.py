@@ -1,3 +1,4 @@
+#!/bin/env python
 """
     Configuration file for downloaded client secret file when creating the OAuth2
     credentials from google cloud.

@@ -1,3 +1,4 @@
+#!/bin/env python
 """Make sure to check out
 https://github.com/mCodingLLC/mCodingYouTube/tree/master/mcoding_youtube Lots
 of setup inspiration came from his code!
