@@ -39,6 +39,7 @@ uvd --update_df=Yes --verify_each_update=Yes
 ````
 # Example: [Command Line Interface (CLI) explained](https://youtu.be/yrzP762gV1I)
 ````
+"""This has been deprecated; however, if you want to clone this repository for familiarity and function, this option still remains."""
 python update_notifications.py --help
 python .\update_notifications.py --update_df=Yes --verify_each_update=Yes
 ````
