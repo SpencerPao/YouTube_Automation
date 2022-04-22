@@ -1,9 +1,7 @@
 """Run via command line to update your like to dislike ratio in YouTube
 comment descriptions."""
 import argparse
-from dotenv import load_dotenv
 import pandas as pd
-from ytad.app_config import Config
 from ytad.download_my_uploads import DownloadUploadsData
 from ytad.authentication import Authenticate
 from ytad.new_description import NewDescription
@@ -43,9 +41,7 @@ def upload_aws_bucket(
 
 def update(args: argparse.ArgumentParser) -> None:
     """Update YouTube description with most up to date like to dislikes using YouTube's Data API v3."""
-    load_dotenv()
-    config = Config(os.getenv("CLIENT_SECRET_FILE"), os.getenv("CHANNEL_ID"))
-    channel_id = config.CHANNEL_ID
+    channel_id = args.id
     print("Verifying your API keys...")
     auth = Authenticate()
     youtube_id = auth.check_token_web_app_data_api()
@@ -122,6 +118,12 @@ def main():
     Example: python update_notifications.py --update_df=No --verify_each_update=yes"""
     parser = argparse.ArgumentParser(
         description="Inputs arguments to update YouTube Description with like to dislike ratio."
+    )
+    parser.add_argument(
+        "--id",
+        type=str,
+        required=True,
+        help="Your YouTube ID. Remember, you can only get your own dislikes.",
     )
     parser.add_argument(
         "--update_df",
