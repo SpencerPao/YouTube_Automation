@@ -25,8 +25,8 @@ pip install ytad
   auth = Authenticate()
   youtube = auth.check_token_web_app_data_api()
   ````
-CLI capability:
-- In base environment, you need the following files to run **uvd** successfully:
+# Command Line Interface (CLI) capability:
+- In base environment, you need the following files to run: **U**pdate **V**ideo **D**escription (**uvd**) successfully:
   - client_secret_web_app.json
   - token.pickle
 ````
@@ -34,9 +34,9 @@ uvd -h # input your arguments for ease of use.
 # example (Using my YouTube Channel ID as an example...)
 uvd --id=UCoCToADdJRd3u-ACz4e_iCw
 ````
-# [Deprecated] Example: [Command Line Interface (CLI) explained](https://youtu.be/yrzP762gV1I)
+# [Deprecated] [Command Line Interface (CLI) explained](https://youtu.be/yrzP762gV1I)
 ````
-"""This has been deprecated; however, if you want to clone this repository for familiarity and function, this option still remains."""
+"""This has been deprecated; see above for more integrated CLI capabilities"""
 python update_notifications.py --help
 python .\update_notifications.py --update_df=Yes --verify_each_update=Yes
 ````
