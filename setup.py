@@ -1,3 +1,4 @@
+#!/bin/env python
 """Packaging setup script."""
 
 from setuptools import setup, find_packages
