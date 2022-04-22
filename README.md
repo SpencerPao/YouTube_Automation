@@ -12,12 +12,7 @@ pip install ytad
 - Need YouTube account with at least one public video
 - Register your account with [Google console developers](https://console.developers.google.com)
 - Need to enable API (YouTube Data API V3)
-- Create **.env** file in root directory
-````
-# Contents of .env
-CLIENT_SECRET_FILE=client_secret_web_app.json
-CHANNEL_ID='YOUR_CHANNEL_ID'
-````
+
 - **You have the choice to choose which OAuth to use; In production, I used Web App**
   - Create OAuth Client ID: > Web App > Name Web App App > Create > Download OAuth Client (JSON)
     - This will be your web app secret file. **(Rename downloaded OAuth Client to client_secret_web_app.json)**
@@ -30,14 +25,16 @@ CHANNEL_ID='YOUR_CHANNEL_ID'
   auth = Authenticate()
   youtube = auth.check_token_web_app_data_api()
   ````
-For CLI capability, try the following:
+CLI capability:
+- In base environment, you need the following files to run **uvd** successfully:
+  - client_secret_web_app.json
+  - token.pickle
 ````
 uvd -h # input your arguments for ease of use.
-
-# example
-uvd --update_df=Yes --verify_each_update=Yes
+# example (Using my YouTube Channel ID as an example...)
+uvd --id=UCoCToADdJRd3u-ACz4e_iCw
 ````
-# Example: [Command Line Interface (CLI) explained](https://youtu.be/yrzP762gV1I)
+# [Deprecated] Example: [Command Line Interface (CLI) explained](https://youtu.be/yrzP762gV1I)
 ````
 """This has been deprecated; however, if you want to clone this repository for familiarity and function, this option still remains."""
 python update_notifications.py --help
@@ -60,7 +57,7 @@ I used AWS services to ensure a cron job (in production) is enacted. This is a l
 
 # Remaining TODOs:
 - [x] Verify setup with @SpencerPao
-- [ ] Overhaul CLI (maybe this should be another issue and version though)
+- [x] Overhaul CLI (maybe this should be another issue and version though)
 - [x] Test API and authentication
 - [x] Create PyPI and TestPyPI accounts
 - [x] Build package wheel
