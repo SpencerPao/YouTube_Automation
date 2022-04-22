@@ -30,6 +30,13 @@ CHANNEL_ID='YOUR_CHANNEL_ID'
   auth = Authenticate()
   youtube = auth.check_token_web_app_data_api()
   ````
+For CLI capability, try the following:
+````
+uvd -h # input your arguments for ease of use.
+
+# example
+uvd --update_df=Yes --verify_each_update=Yes
+````
 # Example: [Command Line Interface (CLI) explained](https://youtu.be/yrzP762gV1I)
 ````
 python update_notifications.py --help

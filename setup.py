@@ -18,9 +18,9 @@ setup(
     author="Spencer Pao",
     author_email="business.inquiry.spao@gmail.com",
     license="MIT",
-    package_dir={'': 'ytad'},
-    packages=find_packages(where='ytad'),
-    entry_points={"console_scripts": [
+    # package_dir={'': 'ytad'},
+    packages=find_packages(include=['ytad', 'ytad.*']),
+    entry_points={'console_scripts': [
         "uvd=ytad.update_notifications:main"]},  # needs to be worked on. Keep outside of function scripts.
     version=versioneer.get_version(),
     cmdclass=versioneer.get_cmdclass(),
