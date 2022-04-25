@@ -1,5 +1,5 @@
 # YouTube Automation
-Using YouTube's API, this repository will work toward automating tedious tasks for YouTube channels. **The main objective is to update YouTube Descriptions with the number of likes, dislikes, likes/(likes+dislikes), timestamp** up to the YouTube API limit. Check out my [YouTube Like, Dislike Counter Playlist](https://youtube.com/playlist?list=PLHT3ZrWZ1pcSFjYuMPwa0m0pjB4fUP5c_)!
+Using YouTube's API, this repository will work toward automating tedious tasks for YouTube channels. **The main objective is to update YouTube Descriptions with the number of likes, dislikes, likes/(likes+dislikes), timestamp** up to the YouTube API limit. Check out my [YouTube Like, Dislike Counter Playlist](https://www.youtube.com/watch?v=g9x_Eg5G-LI&list=PLHT3ZrWZ1pcSFjYuMPwa0m0pjB4fUP5c_&index=1)!
 
 # Requirements:
 - Python >= 3.7
