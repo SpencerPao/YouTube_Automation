@@ -25,6 +25,20 @@ pip install ytad
   auth = Authenticate()
   youtube = auth.check_token_web_app_data_api()
   ````
+  If you get the following
+  ```
+  >>> from ytad.authentication import Authenticate
+>>> auth = Authenticate()
+>>> youtube = auth.check_token_web_app_data_api()
+Loading Credentials From File...
+Refreshing Access Token...
+Traceback (most recent call last):
+...
+google.auth.exceptions.RefreshError: ('invalid_grant: Bad Request', {'error': 'invalid_grant', 'error_description': 'Bad Request'})
+  ```
+Then, delete the ```token.pickle``` and rerun the commands ```youtube = auth.check_token_web_app_data_api()```
+  
+  
 # Command Line Interface (CLI) capability:
 - In base environment, you need the following files to run: **U**pdate **V**ideo **D**escription (**uvd**) successfully:
   - client_secret_web_app.json
