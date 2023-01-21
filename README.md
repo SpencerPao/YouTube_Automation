@@ -45,8 +45,8 @@ Then, delete the ```token.pickle``` and rerun the commands ```youtube = auth.che
   - token.pickle
 ````
 uvd -h # input your arguments for ease of use.
-# example (Using my YouTube Channel ID as an example...)
-uvd --id=UCoCToADdJRd3u-ACz4e_iCw
+# example (Using my YouTube Channel ID as an example without verifying updates...)
+uvd --id=UCoCToADdJRd3u-ACz4e_iCw --verify_each_update=No
 ````
 # [Deprecated] [Command Line Interface (CLI) explained](https://youtu.be/yrzP762gV1I)
 ````
